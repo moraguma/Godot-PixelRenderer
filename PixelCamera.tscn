@@ -5,6 +5,10 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i2po1"]
 shader = ExtResource("2_f8bol")
+shader_parameter/zoom = Vector2(1, 1)
+shader_parameter/trueRes = Vector2(1920, 1080)
+shader_parameter/aimRes = Vector2(16, 9)
+shader_parameter/o = Vector2(0, 0)
 
 [node name="PixelCamera" type="Camera2D"]
 script = ExtResource("2_7m0b1")

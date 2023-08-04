@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bek1j13lm4wi0"]
+
+[ext_resource type="Script" path="res://PixelCamera.gd" id="2_7m0b1"]
+[ext_resource type="Shader" path="res://PixelCameraRect.gdshader" id="2_f8bol"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i2po1"]
+shader = ExtResource("2_f8bol")
+
+[node name="PixelCamera" type="Camera2D"]
+script = ExtResource("2_7m0b1")
+
+[node name="Rect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_i2po1")
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0

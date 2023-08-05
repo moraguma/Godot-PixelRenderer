@@ -106,9 +106,9 @@ func _physics_process(delta):
 	aim_pos += dir * 300 * delta
 	
 	if Input.is_action_pressed("zoom"):
-		aim_zoom += Vector2(1, 1) * delta
+		zoom_by(2)
 	elif Input.is_action_pressed("unzoom"):
-		aim_zoom -= Vector2(1, 1) * delta
+		zoom_by(1)
 	
 	if Input.is_action_just_pressed("shake"):
 		add_trauma()

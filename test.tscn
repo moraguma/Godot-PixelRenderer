@@ -1,13 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://birevu45q36lg"]
 
 [ext_resource type="PackedScene" uid="uid://bek1j13lm4wi0" path="res://PixelCamera.tscn" id="1_304qi"]
-[ext_resource type="Texture2D" uid="uid://snmgbv3ocw7n" path="res://bg.png" id="1_lturl"]
+[ext_resource type="Texture2D" uid="uid://c7a2ubbi2s7sa" path="res://sheet.png" id="1_bxdcg"]
 
 [node name="Test" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(277, 161)
-texture = ExtResource("1_lturl")
+[node name="Sheet" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(458, 317)
+scale = Vector2(6, 6)
+texture = ExtResource("1_bxdcg")
 
 [node name="PixelCamera" parent="." instance=ExtResource("1_304qi")]
-aim_resolution = Vector2(240, 135)

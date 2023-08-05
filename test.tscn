@@ -10,4 +10,4 @@ position = Vector2(277, 161)
 texture = ExtResource("1_lturl")
 
 [node name="PixelCamera" parent="." instance=ExtResource("1_304qi")]
-aim_resolution = Vector2(160, 90)
+aim_resolution = Vector2(240, 135)

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://PixelCamera.gd" id="2_7m0b1"]
 [ext_resource type="Shader" path="res://PixelCameraRect.gdshader" id="2_f8bol"]
-[ext_resource type="Texture2D" uid="uid://snmgbv3ocw7n" path="res://bg.png" id="3_ua0ub"]
+[ext_resource type="Texture2D" uid="uid://d3to3xt6wbwit" path="res://icon.svg" id="3_2k7vx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_i2po1"]
 shader = ExtResource("2_f8bol")
@@ -17,4 +17,5 @@ aim_resolution = Vector2(320, 180)
 
 [node name="Rect" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_i2po1")
-texture = ExtResource("3_ua0ub")
+scale = Vector2(7.5, 4.219)
+texture = ExtResource("3_2k7vx")

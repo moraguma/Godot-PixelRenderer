@@ -9,6 +9,7 @@ viewport_path = NodePath("Viewport")
 script = ExtResource("1_v8aht")
 max_resolution = Vector2i(480, 270)
 base_resolution = Vector2i(320, 180)
+render_starting_scene = false
 
 [node name="Camera" type="Camera2D" parent="."]
 

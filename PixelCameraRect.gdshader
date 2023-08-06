@@ -9,8 +9,8 @@ uniform sampler2D screen_texture : hint_screen_texture, repeat_disable, filter_n
 
 
 void fragment() {
-	vec2 res = vec2(aimRes[0] / zoom[0], aimRes[1] / zoom[1]);
-	vec2 pixel_uv = floor(vec2(UV[0] * res[0], UV[1] * res[1]) + fract(o)) / res;
+	vec2 res = aimRes / zoom;
+	vec2 pixel_uv = round(UV * res + fract(o)) / res;
 	
 	vec4 text = texture(screen_texture, pixel_uv, 0.0);
 	

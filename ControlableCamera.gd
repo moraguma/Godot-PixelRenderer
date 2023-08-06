@@ -35,6 +35,11 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("shake"):
 		add_trauma()
+	
+	if Input.is_action_just_pressed("zoom"):
+		PixelRenderer.zoom_by(4.0)
+	elif Input.is_action_just_pressed("unzoom"):
+		PixelRenderer.zoom_by(2.0/3.0)
 
 func _process(delta):
 	# Shake

@@ -10,14 +10,22 @@ config_version=5
 
 [application]
 
-config/name="PixelCamera"
+config/name="PixelRenderer"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://addons/pixelrenderer/PixelRenderer.png"
+
+[autoload]
+
+PixelRenderer="*res://addons/pixelrenderer/PixelRenderer.tscn"
 
 [display]
 
 window/size/viewport_width=960
 window/size/viewport_height=540
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/pixelrenderer/plugin.cfg")
 
 [input]
 
